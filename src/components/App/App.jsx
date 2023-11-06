@@ -9,6 +9,7 @@ import {
 } from 'components';
 
 import article from 'data/article.json';
+import dateJson from 'data/data.json'
 
 export const App = () => {
   return (
@@ -30,7 +31,10 @@ export const App = () => {
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
         </Heading>
-        <Statistics />
+        <Statistics
+          title='Main Statistics'
+          stats={dateJson}
+        />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
